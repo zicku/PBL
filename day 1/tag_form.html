@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Lengkap</title>
+</head>
+<body>
+
+    <h1>Formulir Pendaftaran Pelatihan Web Developer</h1>
+    <p>Silakan isi semua data yang diperlukan di bawah ini dengan benar.</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <p>
+                <label for="nama_lengkap">Nama Lengkap:</label><br>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+            </p>
+
+            <p>
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Buat Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="pria" name="jenis_kelamin" value="pria"> <label for="pria">Pria</label><br>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="wanita"> <label for="wanita">Wanita</label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pilihan Pelatihan</legend>
+
+            <p>
+                <label for="jalur_pelatihan">Pilih Jalur Pelatihan:</label><br>
+                <select id="jalur_pelatihan" name="jalur_pelatihan">
+                    <optgroup label="Front-End Development">
+                        <option value="html_css">Dasar HTML & CSS</option>
+                        <option value="javascript">JavaScript Fundamental</option>
+                        <option value="react">React.js</option>
+                    </optgroup>
+                    <optgroup label="Back-End Development">
+                        <option value="php">PHP & MySQL</option>
+                        <option value="python_django">Python & Django</option>
+                    </optgroup>
+                    <option value="fullstack">Full-Stack Lengkap</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Keahlian yang Sudah Dimiliki:</label><br>
+                <input type="checkbox" id="skill_html" name="skill" value="html"> <label for="skill_html">HTML</label><br>
+                <input type="checkbox" id="skill_css" name="skill" value="css"> <label for="skill_css">CSS</label><br>
+                <input type="checkbox" id="skill_js" name="skill" value="js"> <label for="skill_js">JavaScript</label><br>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Tambahan</legend>
+            
+            <p>
+                <label for="alasan">Alasan Bergabung:</label><br>
+                <textarea id="alasan" name="alasan" rows="5" cols="40" placeholder="Ceritakan motivasi Anda..."></textarea>
+            </p>
+
+            <p>
+                <label for="cv">Unggah CV (format .pdf):</label><br>
+                <input type="file" id="cv" name="cv" accept=".pdf">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Persetujuan & Pengiriman</legend>
+            <p>
+                <input type="checkbox" id="setuju" name="setuju" required>
+                <label for="setuju">Saya setuju dengan semua syarat dan ketentuan yang berlaku.</label>
+            </p>
+
+            <p>
+                <button type="submit">Daftar Sekarang</button>
+                
+                <input type="reset" value="Kosongkan Formulir">
+            </p>
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>

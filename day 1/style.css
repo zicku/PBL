@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+ul {
+  margin: 20px;
+}
+main {
+  display: grid;
+  grid-template-areas: "tentang sidebar";
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#tentangSaya {
+  grid-area: tentang;
+}
+
+#sideBar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer {
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #5d5c5c;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-areas:
+      "tentang"
+      "sidebar"
+      "contact";
+    grid-template-columns: 1fr;
+  }
+}
